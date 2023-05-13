@@ -3,7 +3,7 @@ import time
 
 from DocxProcessor import DocxProcessor
 
-from chatgpt_wrapper.backends.browser.chatgpt import ChatGPT
+from chatgpt_wrapper.backends.browser.chatgpt import BrowserBackend
 from chatgpt_wrapper.core.config import Config
 
 
@@ -15,7 +15,7 @@ def initialize_chatgpt():
     config = Config()
     config.set("backend", "chatgpt-browser")
     # config.set('chat.model', 'gpt4')
-    bot = ChatGPT(config)
+    bot = BrowserBackend(config)
     bot.launch_browser()
 
 
