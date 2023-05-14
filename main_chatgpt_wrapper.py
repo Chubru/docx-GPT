@@ -3,7 +3,7 @@ import time
 
 from DocxProcessor import DocxProcessor
 
-from chatgpt_wrapper.backends.browser.chatgpt import BrowserBackend
+from chatgpt_wrapper.backends.browser.backend import BrowserBackend
 from chatgpt_wrapper.core.config import Config
 
 
